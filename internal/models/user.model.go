@@ -9,7 +9,7 @@ type User struct {
 	Password      string    `gorm:"size:50;not null"`
 	UserFirstName string    `gorm:"size:50;not null"`
 	UserLastName  string    `gorm:"size:50;not null"`
-	DateOfBirth   time.Time `gorm:"type:date"`
+	DateOfBirth   time.Time `gorm:"type:date;not null"`
 	PhoneNumber   string    `gorm:"size:20;not null"`
 	University    string    `gorm:"size:100;not null"`
 	QRCode        []byte    `gorm:"size:100"`
